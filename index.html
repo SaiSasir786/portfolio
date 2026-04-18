@@ -2,827 +2,389 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#060814">
+
+  <title>Sai Sasir K — Gen-AI &amp; ML Engineer</title>
+  <meta name="description"
+    content="Sai Sasir K — Gen-AI &amp; ML Engineer designing production systems at the intersection of large language models, retrieval architectures, and applied research.">
+  <meta name="author" content="Sai Sasir K">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sai Sasir K — Gen-AI & ML Engineer">
+  <meta property="og:description"
+    content="Applied AI engineer designing LLM systems, retrieval pipelines, and autonomous agents with production reliability in mind.">
+  <meta property="og:image" content="assets/img/misc/ic.png">
+
+  <link rel="icon" href="assets/img/misc/ic.png">
+  <link rel="apple-touch-icon" href="assets/img/misc/ic.png">
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8F82144ZYM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-8F82144ZYM');
   </script>
 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <!-- Performance: preload critical CSS -->
-  <link rel="preload" href="assets/css/pro-design.css" as="style">
-  <link rel="preload" href="assets/css/style.css" as="style">
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-
-  <title>Sai Sasir K — Gen-AI &amp; ML Engineer</title>
-  <meta
-    content="Sai Sasir K — Gen-AI &amp; ML Engineer designing production systems at the intersection of large language models, retrieval architectures, and applied research."
-    name="description">
-  <meta
-    content="Sai Sasir, Gen-AI engineer, ML engineer, machine learning, LLM, generative AI, deep learning, RAG, fine-tuning, LangChain, PyTorch, TensorFlow, Hugging Face, AI systems, robotics"
-    name="keywords">
-  <meta name="author" content="Sai Sasir K">
-
-  <!-- Open Graph / Social sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Sai Sasir K — Gen-AI & ML Engineer">
-  <meta property="og:description" content="Applied AI engineer designing LLM systems, retrieval pipelines, and autonomous agents with production reliability in mind.">
-  <meta property="og:image" content="assets/img/misc/ic.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sai Sasir K — Gen-AI & ML Engineer">
-  <meta name="twitter:description" content="Applied AI engineer designing LLM systems, retrieval pipelines, and autonomous agents with production reliability in mind.">
-
-  <!-- Favicons -->
-  <link href="assets/img/misc/ic.png" rel="icon">
-  <link href="assets/img/misc/ic.png" rel="apple-touch-icon">
-
-  <!-- Theme color for mobile browsers -->
-  <meta name="theme-color" content="#060814">
-
-  <!-- Google Fonts — critical (Space Grotesk + JetBrains Mono + Instrument Serif for editorial display) -->
+  <!-- Fonts: Inter (sans), Instrument Serif (editorial display), JetBrains Mono (metadata) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet">
-  <!-- Legacy fonts — loaded async (light mode fallback only) -->
-  <link
-    rel="stylesheet" media="print" onload="this.media='all'"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&display=swap">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-
-  <link href="assets/css/interaction.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/enhancements.css" rel="stylesheet">
-  <link href="assets/css/ai-identity.css" rel="stylesheet">
-  <link href="assets/css/pro-design.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.8.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="stylesheet" href="assets/css/hailmary.css">
 </head>
 
-<body class="dark-mode" ontouchstart="">
+<body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- Starfield backdrop -->
+  <div class="starfield" aria-hidden="true">
+    <div class="star-layer star-layer-1"></div>
+    <div class="star-layer star-layer-2"></div>
+    <div class="star-layer star-layer-3"></div>
+    <div class="horizon-glow"></div>
+  </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <!-- Mobile top bar -->
+  <header class="mobile-bar" aria-label="Primary">
+    <span class="mobile-mark">SSK</span>
+    <a href="#contact" class="mobile-cta">Contact</a>
+  </header>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#expertise" class="nav-link scrollto"><i class="bx bx-brain"></i> <span>Expertise</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-library"></i> <span>Projects</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Stack</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Resume</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+  <div class="page">
 
-  </header><!-- End Header -->
+    <!-- ======= Left sidebar ======= -->
+    <aside class="sidebar" aria-label="Profile">
+      <div class="sidebar-inner">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <canvas id="particle-canvas" aria-hidden="true"></canvas>
-    <div class="overlay"></div>
-    <div class="container" data-aos="zoom-in-right" data-aos-delay="350">
-      <p class="hero-eyebrow"><span class="eyebrow-line"></span>An applied AI practice</p>
-      <h1>SAI SASIR K</h1>
-      <p class="hero-tagline"><em>Engineering intelligent systems with precision and restraint.</em></p>
-      <p class="hero-subtitle">Gen-AI &amp; ML Engineer &nbsp;&bull;&nbsp; Systems Architect &nbsp;&bull;&nbsp; Deep
-        Learning Practitioner</p>
-      <span class="typed"
-        data-typed-items="Architecting intelligent systems that reason at scale.,Fine-tuning foundation models for production workloads.,Designing retrieval pipelines and autonomous agents.,Translating frontier research into reliable engineering."></span>
+        <div class="identity">
+          <p class="eyebrow"><span class="rule"></span>An applied AI practice</p>
+          <h1 class="name">Sai Sasir K</h1>
+          <p class="role">Gen-AI &amp; ML Engineer</p>
+          <p class="tagline"><em>Designing intelligent systems with precision and restraint.</em></p>
+        </div>
 
-      <div class="hero-available-badge">
-        <span class="badge-dot"></span>
-        Open to new opportunities
+        <nav class="nav" aria-label="Sections">
+          <ul>
+            <li><a href="#about" class="nav-link is-active" data-target="about"><span class="nav-rule"></span><span class="nav-label">About</span></a></li>
+            <li><a href="#expertise" class="nav-link" data-target="expertise"><span class="nav-rule"></span><span class="nav-label">Expertise</span></a></li>
+            <li><a href="#work" class="nav-link" data-target="work"><span class="nav-rule"></span><span class="nav-label">Selected Work</span></a></li>
+            <li><a href="#experience" class="nav-link" data-target="experience"><span class="nav-rule"></span><span class="nav-label">Experience</span></a></li>
+            <li><a href="#contact" class="nav-link" data-target="contact"><span class="nav-rule"></span><span class="nav-label">Contact</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          <span>Open to new opportunities</span>
+        </div>
+
+        <ul class="socials" aria-label="Profiles">
+          <li><a href="https://github.com/SaiSasir786" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.17-.02-2.13-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.5 3.18-1.19 3.18-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.13 0 1.54-.01 2.78-.01 3.16 0 .31.21.67.79.55 4.56-1.52 7.85-5.83 7.85-10.91C23.5 5.74 18.27.5 12 .5z"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/saisasirkosuri/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8h4.52v14H.24V8zm7.52 0h4.33v1.92h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.43 3.01 5.43 6.93V22h-4.52v-6.18c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.37 1.6-2.37 3.25V22H7.76V8z"/></svg>
+          </a></li>
+          <li><a href="mailto:saisasir99@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a></li>
+        </ul>
+
       </div>
+    </aside>
 
-      <div class="hero-ctas">
-        <a href="#portfolio" class="btn-hero-primary scrollto">View selected work</a>
-        <a href="#contact" class="btn-hero-secondary scrollto">Start a conversation</a>
-      </div>
+    <!-- ======= Main column ======= -->
+    <main class="main">
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">3+</span>
-          <span class="stat-label">Shipped projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">AWS</span>
-          <span class="stat-label">Certified practitioner</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">8.2</span>
-          <span class="stat-label">CGPA / 10</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">VIT</span>
-          <span class="stat-label">Class of '25</span>
-        </div>
-      </div>
+      <!-- About -->
+      <section id="about" class="section" data-section="about">
+        <header class="chapter">
+          <span class="chapter-num">I</span>
+          <span class="chapter-label">About</span>
+        </header>
 
-      <div class="color-picker">
-        <button class='color-change' id="color-1" autofocus></a>
-          <button class='color-change' id="color-2"></a>
-            <button class='color-change' id="color-3"></a>
-              <button class='color-change' id="color-4"></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Expertise Section ======= -->
-    <section id="expertise" class="expertise section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="section-title">
-          <h2>Expertise</h2>
-          <p>Core disciplines where rigorous engineering meets applied intelligence.</p>
+        <div class="prose">
+          <p>
+            I&apos;m <strong>Sai Sasir</strong> — a Gen-AI and ML engineer focused on large language models,
+            retrieval architectures, and the quiet discipline of making intelligent systems behave reliably in
+            production. My work sits at the seam between applied research and shipped engineering: model
+            fine-tuning, retrieval pipelines, evaluation harnesses, and the infrastructure that holds it all
+            together.
+          </p>
+          <p>
+            A background in <strong>AI &amp; Robotics</strong> shapes how I think about intelligence — as something
+            that must perceive, reason, and act within real constraints, not just on a benchmark. I care about the
+            <em>boring</em> parts of the stack: evaluation, observability, cost, latency, and the thousand small
+            decisions that separate a demo from a system people trust.
+          </p>
+          <p>
+            I hold a degree in AI &amp; Robotics from <strong>VIT</strong> (Class of 2025, CGPA 8.2 / 10) and am an
+            <strong>AWS Certified</strong> practitioner. I&apos;m currently open to roles where applied AI meets
+            serious engineering craft.
+          </p>
         </div>
-        <div class="expertise-grid">
-          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="expertise-icon"><i class="bx bx-brain"></i></div>
-            <h4>Generative AI &amp; LLMs</h4>
+      </section>
+
+      <!-- Expertise -->
+      <section id="expertise" class="section" data-section="expertise">
+        <header class="chapter">
+          <span class="chapter-num">II</span>
+          <span class="chapter-label">Expertise</span>
+        </header>
+
+        <ul class="discipline-list">
+          <li class="discipline">
+            <h3>Generative AI &amp; Large Language Models</h3>
             <p>Fine-tuning foundation models, designing retrieval-augmented pipelines, and deploying multimodal
               language systems with production-grade reliability.</p>
-            <div class="expertise-tags">
-              <span>LLaMA</span><span>GPT-4</span><span>Claude API</span><span>RAG</span><span>LoRA / PEFT</span>
-            </div>
-          </div>
-          <div class="expertise-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="expertise-icon"><i class="bx bx-chip"></i></div>
-            <h4>ML Engineering</h4>
-            <p>End-to-end machine learning pipelines — from data ingestion and model training through serving,
-              observability, and continuous evaluation.</p>
-            <div class="expertise-tags">
-              <span>PyTorch</span><span>TensorFlow</span><span>MLflow</span><span>W&amp;B</span><span>CUDA</span>
-            </div>
-          </div>
-          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="expertise-icon"><i class="bx bx-bot"></i></div>
-            <h4>Agents &amp; Applied Systems</h4>
-            <p>Designing autonomous agent architectures, tool-integrated workflows, and reasoning systems that perform
-              reliably under real-world constraints.</p>
-            <div class="expertise-tags">
-              <span>LangChain</span><span>LlamaIndex</span><span>AutoGen</span><span>CrewAI</span><span>Tool Use</span>
-            </div>
-          </div>
-          <div class="expertise-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="expertise-icon"><i class="bx bx-cog"></i></div>
-            <h4>Robotics &amp; Embodied AI</h4>
+            <ul class="tags">
+              <li>LLaMA</li><li>GPT-4</li><li>Claude</li><li>RAG</li><li>LoRA / PEFT</li>
+            </ul>
+          </li>
+          <li class="discipline">
+            <h3>ML Engineering &amp; Infrastructure</h3>
+            <p>End-to-end machine learning pipelines — ingestion, training, serving, observability, and continuous
+              evaluation — engineered to hold up under real load.</p>
+            <ul class="tags">
+              <li>PyTorch</li><li>TensorFlow</li><li>MLflow</li><li>W&amp;B</li><li>CUDA</li>
+            </ul>
+          </li>
+          <li class="discipline">
+            <h3>Agents &amp; Applied Systems</h3>
+            <p>Autonomous agent architectures, tool-integrated workflows, and reasoning systems that perform
+              dependably under real-world constraints.</p>
+            <ul class="tags">
+              <li>LangChain</li><li>LlamaIndex</li><li>AutoGen</li><li>CrewAI</li><li>Tool Use</li>
+            </ul>
+          </li>
+          <li class="discipline">
+            <h3>Robotics &amp; Embodied AI</h3>
             <p>Perception and control systems that bridge physical hardware with learned behaviour — through sensor
               fusion, computer vision, and real-time inference.</p>
-            <div class="expertise-tags">
-              <span>ROS</span><span>OpenCV</span><span>SLAM</span><span>Computer Vision</span><span>Sensor Fusion</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Expertise Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Selected Work</h2>
-          <p>A small collection of systems, experiments, and end-to-end builds.</p>
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-              <ul id="portfolio-flters">
-                <li data-filter=".filter-genai" class="filter-active">Gen-AI</li>
-                <li data-filter=".filter-webdev">Full-Stack</li>
-                <li data-filter=".filter-roboex">Robotics</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- ======= AI TRAVEL CHATBOT ======= -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-genai filter-webdev">
-            <ul id="portfolio-tags">
-              <li>Gen-AI</li>
-              <li>Full-Stack</li>
+            <ul class="tags">
+              <li>ROS</li><li>OpenCV</li><li>SLAM</li><li>Computer Vision</li><li>Sensor Fusion</li>
             </ul>
-            <a href="projects/maru.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-              title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/brainstorm_chatbot/robot_generation.gif" class="img-fluid" loading="lazy" alt=""
-                  style="width: 400px; height: 250px; object-fit: cover;">
-                <div class="portfolio-info">
-                  <h4>Conversational Travel Assistant</h4>
-                  <p>An NLP-driven booking agent built on Dialogflow with Telegram delivery and a transactional MySQL
-                    backend.</p>
-                </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Selected Work -->
+      <section id="work" class="section" data-section="work">
+        <header class="chapter">
+          <span class="chapter-num">III</span>
+          <span class="chapter-label">Selected Work</span>
+        </header>
+
+        <ol class="projects">
+
+          <li class="project">
+            <a class="project-inner" href="projects/maru.html">
+              <div class="project-thumb">
+                <img src="assets/img/design_projects/brainstorm_chatbot/robot_generation.gif"
+                  alt="Conversational travel assistant interface" loading="lazy">
               </div>
-            </a>
-          </div>
-
-          <!-- ======= MARU — MERN Platform ======= -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
-            <ul id="portfolio-tags">
-              <li>Full-Stack</li>
-            </ul>
-            <a href="projects/maru.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-              title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/maru/avgif.gif" class="img-fluid" loading="lazy" alt=""
-                  style="width: 400px; height: 250px;">
-                <div class="portfolio-info">
-                  <h4>Full-Stack Marketplace Platform</h4>
-                  <p>A production-grade virtual showroom — browse, list, and transact — engineered end-to-end on the
-                    MERN stack.</p>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-year">2024</span>
+                  <span class="project-kind">Applied NLP</span>
                 </div>
-              </div>
-            </a>
-
-          </div>
-
-          <! --=======GLOW=======-->
-            <!--<div class="col-lg-4 col-md-6 portfolio-item filter-uxui filter-research">
-            <ul id="portfolio-tags">
-              <li>ux/ui design</li>
-              <li>research</li>
-            </ul>
-            <a href="projects/glow.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/glow/glow screen gif.gif" class="img-fluid" loading="lazy" alt="">
-                <div class="portfolio-info">
-                  <h4>glow</h4>
-                  <p>A virtual environment for performances during the age of COVID-19.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <! -- ======= MITBOOK ======= -->
-            <!--<div class="col-lg-4 col-md-6 portfolio-item filter-uxui filter-research">
-            <ul id="portfolio-tags">
-              <li>ux/ui design</li>
-              <li>research</li>
-            </ul>
-            <! -- <a href="projects/book.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"> -->
-            <!--<div class="portfolio-wrap">
-                <img src="assets/img/design_projects/mitbook/logoanimation.gif" class="img-fluid" loading="lazy" alt="">
-                <div class="static-img">
-                  <img src="assets/img/design_projects/mitbook/sunraymockup.png" class="img-fluid" loading="lazy" alt="">
-                </div>
-                <div class="portfolio-info">
-                  <h4>book</h4>
-                  <p>A workspace booking system for the MIT Libraries. <br> (6/18/23: page currently under construction)</p>
-                </div>
-              </div>
-             -- </a> -->
-            <!--</div> -- >
-
-          <! -- ======= CRITTER ======= -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-roboex">
-              <ul id="portfolio-tags">
-                <li>Robotics</li>
-              </ul>
-              <a href="projects/critter.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                title="Portfolio Details">
-                <div class="portfolio-wrap">
-                  <img src="assets/img/design_projects/critter/remotecrl.jpg" class="img-fluid" loading="lazy" alt=""
-                    style="width: 400px; height: 250px;">
-                  <div class="static-img">
-                    <img src="assets/img/design_projects/critter/remotecrl.jpg" class="img-fluid" loading="lazy" alt=""
-                      style="width: 400px; height: 250px;">
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Autonomous Remote Vehicle</h4>
-                    <p>A machine-learning-assisted ROV with real-time sensor fusion, computer vision, and closed-loop
-                      control.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-
-
-            <!-- ======= ENERGY VISUAL ======= -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-experiment filter-webdev">
-              <ul id="portfolio-tags">
-                <li>experiment</li>
-                <li>web dev</li>
-              </ul>
-              <a href="projects/energy.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-                <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/energy/glowing.gif" class="img-fluid" loading="lazy" alt="">
-                <div class="static-img">
-                  <img src="assets/img/design_projects/energy/student.png" class="img-fluid" loading="lazy" alt="">
-                </div>
-                <div class="portfolio-info">
-                  <h4>exploratory energy</h4>
-                  <p>An educational web interactive about energy.</p>
-                </div>
-              </a>
-            </div>
-
-            <!-- 
-              <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
-            <ul id="portfolio-tags">
-              <li>misc</li>
-            </ul>
-            <a href="projects/grid-stool.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/infinite grid stool/cover_fitted_rendering.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="static-img">
-                  <img src="assets/img/design_projects/infinite grid stool/slides_cover.jpg" class="img-fluid" loading="lazy" alt="">
-                </div>
-                <div class="portfolio-info">
-                  <h4>infinite grid</h4>
-                  <p>Furniture that connects.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
-           <! -- ======= WEB ======= -->
-              <div class="col-lg-4 col-md-6 portfolio-item filter-physical filter-roboex">
-                <ul id="portfolio-tags">
-                  <li>RoboEx</li>
+                <h3 class="project-title">Conversational Travel Assistant<span class="arrow" aria-hidden="true">→</span></h3>
+                <p class="project-desc">
+                  A natural-language booking agent built on Google Dialogflow, delivered through the Telegram API,
+                  backed by a transactional MySQL service. Closes the loop on an end-to-end booking flow with no human
+                  intervention required.
+                </p>
+                <ul class="tags">
+                  <li>Dialogflow</li><li>JavaScript</li><li>PHP</li><li>MySQL</li><li>Telegram Bot API</li>
                 </ul>
-                <a href="projects/web.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                  title="Portfolio Details">
-                  <div class="portfolio-wrap">
-                    <img src="assets/img/design_projects/web (line followers)/fire3.gif" class="img-fluid" loading="lazy" alt=""
-                      style="width: 400px; height: 250px;">
-                    <div class="static-img">
-                      <img src="assets/img/design_projects/web (line followers)/fire2.jpg" class="img-fluid" loading="lazy" alt=""
-                        style="width: 400px; height: 250px;">
-                    </div>
-                    <div class="portfolio-info">
-                      <h4>fire</h4>
-                      <p>An enclosure built by a joint effort between humans and robots.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-
-              <!-- ======= OSSIUM ======= -->
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
-            <ul id="portfolio-tags">
-              <li>misc</li>
-            </ul>
-            <a href="projects/ossium.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/ossium/skeleton skelechair outline.png" class="img-fluid" loading="lazy" alt="">
-                <div class="static-img">
-                  <img src="assets/img/design_projects/ossium/studio.jpeg" class="img-fluid" loading="lazy" alt="">
-                </div>
-                <div class="portfolio-info">
-                  <h4>ossium</h4>
-                  <p>A bio-inspired chair.</p>
-                </div>
               </div>
             </a>
-          </div> -->
+          </li>
 
-              <!-- ======= IDEO ======= -->
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-research filter-uxui">
-            <ul id="portfolio-tags">
-              <li>research</li>
-              <li>ux/ui design</li>
-            </ul>
-            <a href="projects/ideo.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/misc/ideo_cutout.png" class="img-fluid" loading="lazy" alt="">
-                <div class="static-img">
-                  <img src="assets/img/misc/ideo overlay opaque.png" class="img-fluid" loading="lazy" alt="">
+          <li class="project">
+            <a class="project-inner" href="projects/maru.html">
+              <div class="project-thumb">
+                <img src="assets/img/design_projects/maru/avgif.gif"
+                  alt="Full-stack marketplace platform" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-year">2023</span>
+                  <span class="project-kind">Full-Stack</span>
                 </div>
-                <div class="portfolio-info">
-                  <h4>IDEO</h4>
-                  <p>16-week interaction design internship.</p>
-                </div>
+                <h3 class="project-title">Marketplace Platform<span class="arrow" aria-hidden="true">→</span></h3>
+                <p class="project-desc">
+                  A production-grade virtual showroom with dynamic inventory, authenticated sessions, and a lightweight
+                  recommendation layer — engineered end-to-end on the MERN stack with disciplined state management.
+                </p>
+                <ul class="tags">
+                  <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>REST</li>
+                </ul>
               </div>
             </a>
-          </div>  -->
+          </li>
 
-              <!-- ======= FOODSION ======= -->
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-digital">
-            <a href="projects/project-template.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/brainstorm_chatbot/robot_generation.gif" class="img-fluid" loading="lazy" alt="">
-                <div class="portfolio-info">
-                  <h4>Project</h4>
-                  <p>App</p>
+          <li class="project">
+            <a class="project-inner" href="projects/critter.html">
+              <div class="project-thumb">
+                <img src="assets/img/design_projects/critter/remotecrl.jpg"
+                  alt="Autonomous remote vehicle" loading="lazy">
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-year">2022</span>
+                  <span class="project-kind">Embodied AI</span>
                 </div>
+                <h3 class="project-title">Autonomous Remote Vehicle<span class="arrow" aria-hidden="true">→</span></h3>
+                <p class="project-desc">
+                  A machine-learning-assisted ROV with real-time sensor fusion, wireless telemetry, and computer
+                  vision–based obstacle awareness. Designed for operation in constrained, unstructured environments.
+                </p>
+                <ul class="tags">
+                  <li>Arduino</li><li>Raspberry Pi</li><li>Python</li><li>OpenCV</li><li>RF Telemetry</li>
+                </ul>
               </div>
             </a>
-          </div> -->
+          </li>
 
-              <!-- ======= MARBLE ======= -->
-              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-digital">
-            <a href="projects/marble.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <div class="portfolio-wrap">
-                <img src="assets/img/design_projects/mARble/clean.PNG" class="img-fluid" loading="lazy" alt="">
-                <div class="portfolio-info">
-                  <h4>mARble</h4>
-                  <p>An augmented physics lesson.</p>
-                </div>
-              </div>
-            </a>
-          </div> -->
+        </ol>
+      </section>
 
-        </div>
+      <!-- Experience -->
+      <section id="experience" class="section" data-section="experience">
+        <header class="chapter">
+          <span class="chapter-num">IV</span>
+          <span class="chapter-label">Experience &amp; Education</span>
+        </header>
 
-      </div>
-    </section><!-- End Portfolio Section -->
+        <ol class="timeline">
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Toolkit</h2>
-          <p>The instruments I reach for — from experimental notebooks to production deployment.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h4>Gen-AI &amp; LLMs</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">Hugging Face</span>
-              <span class="skill-tag">LangChain</span>
-              <span class="skill-tag">LlamaIndex</span>
-              <span class="skill-tag">OpenAI API</span>
-              <span class="skill-tag">Claude API</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag">LoRA / PEFT</span>
-              <span class="skill-tag">Fine-tuning</span>
-              <span class="skill-tag">Prompt Engineering</span>
+          <li class="entry">
+            <div class="entry-meta">
+              <span class="entry-date">2021 — 2025</span>
             </div>
-          </div>
-          <div class="skill-category">
-            <h4>ML Frameworks</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">PyTorch</span>
-              <span class="skill-tag">TensorFlow</span>
-              <span class="skill-tag">Scikit-learn</span>
-              <span class="skill-tag">XGBoost</span>
-              <span class="skill-tag">FAISS</span>
-              <span class="skill-tag">ONNX</span>
-              <span class="skill-tag">CUDA</span>
-              <span class="skill-tag">TensorRT</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>MLOps &amp; Infra</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">MLflow</span>
-              <span class="skill-tag">Weights &amp; Biases</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Kubernetes</span>
-              <span class="skill-tag">AWS SageMaker</span>
-              <span class="skill-tag">GCP Vertex AI</span>
-              <span class="skill-tag">FastAPI</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Languages</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">Bash</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Robotics &amp; Vision</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">ROS</span>
-              <span class="skill-tag">OpenCV</span>
-              <span class="skill-tag">SLAM</span>
-              <span class="skill-tag">Arduino</span>
-              <span class="skill-tag">Raspberry Pi</span>
-              <span class="skill-tag">Sensor Fusion</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Web &amp; Data</h4>
-            <div class="skill-tags">
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Apache Spark</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Git</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= About Section for large screens ======= -->
-    <section id="about" class="about">
-
-      <!-- ======= ABOUT container for larger screens ======= -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="section-title">
-          <h2>About</h2>
-          <!-- <div class="social-links">
-            <a href="https://github.com/buksters" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-            <a href="https://linkedin.com/in/ibuki-iwasaki
-            " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="mailto:ibukiwasaki@gmail.com"><i class="bx bx-envelope"></i></a>
-          </div> -->
-          <p>I&apos;m Sai Sasir — a Gen-AI and ML engineer focused on large language models, retrieval architectures,
-            and the quiet discipline of making intelligent systems behave reliably in production. My work sits at the
-            seam between applied research and shipped engineering: model fine-tuning, retrieval pipelines, evaluation
-            harnesses, and the infrastructure that holds it all together.</p>
-          <p style="margin-top: 12px;">A background in AI and Robotics shapes how I think about intelligence — as
-            something that must perceive, reason, and act within real constraints, not just on a benchmark. I believe
-            the most durable AI is built through careful engineering, close collaboration with domain experts, and an
-            unromantic focus on outcomes. A few snapshots from the journey below.</p>
-          <div class="swiper about-pictures">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="overlay">
-                  <p>
-                    A little more about me:
-                  </p>
-                </div>
-                <img src="assets/img/misc/sh1.jpg" class="img-fluid" loading="lazy" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/misc/zoo1.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="overlay">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/misc/del.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="overlay">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/misc/mli.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="overlay">
-                </div>
-              </div>
-              <!---- <div class="swiper-slide">
-                <img src="assets/img/misc/pc.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="overlay">
-                  <p>
-                    except for when I lived on a ski resort in Utah for six months when classes were virtual due to the pandemic,
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/misc/japan.jpg" class="img-fluid" loading="lazy" alt="">
-                <div class="overlay">
-                </div>
-              </div>-->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ======= ABOUT container for smaller screens ======= -->
-      <!-- <div class="container d-lg-none" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hello! I'm Ibuki, a Japanese-American designer-maker-researcher who uses a lot of hyphens when describing myself because I dwell in a lot of intersections. These days I enjoy exploring and experimenting in the intersection of design, technology, and behavior.</p>
-          <br>
-          <img src="assets/img/pond.JPG" class="img-fluid" loading="lazy" alt="">
-        </div>
-      </div> -->
-    </section>
-
-    <!-- End About Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Résumé</h2>
-          <p>Full CV available on request — reach out via <a href="mailto:saisasir99@gmail.com" style="color:var(--main-color);text-decoration:none;">email</a> or <a href="https://www.linkedin.com/in/saisasirkosuri/" target="_blank" style="color:var(--main-color);text-decoration:none;">LinkedIn</a>.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>SAI SASIR K</h4>
-              <p><em>Gen-AI and ML engineer working across large language models, retrieval architectures, and applied
-                  automation. I design end-to-end pipelines — ingestion, training, serving, observability — and have a
-                  foundation in both software engineering and robotics (AI &amp; Robotics, VIT). I build systems that
-                  are technically disciplined, production-minded, and grounded in real-world constraints.</em>
+            <div class="entry-body">
+              <h3>B.Tech, Artificial Intelligence &amp; Robotics</h3>
+              <p class="entry-org">Vellore Institute of Technology (VIT)</p>
+              <p class="entry-desc">
+                Foundational coursework across machine learning, deep learning, computer vision, and control systems —
+                paired with hands-on project work spanning applied NLP, full-stack engineering, and embodied AI.
+                Graduated with a CGPA of 8.2 / 10.
               </p>
-              <div class="social-links">
-                <a href="https://github.com/saisasir" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/saisasirkosuri/
-                " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <a href="mailto:saisasir99@gmail.com"><i class="bx bx-envelope"></i></a>
-              </div>
+              <ul class="tags">
+                <li>Machine Learning</li><li>Deep Learning</li><li>Computer Vision</li><li>Robotics</li>
+              </ul>
             </div>
+          </li>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item pb-0">
-              <h4>Vellore Institute of Technology <br>
-                Bachelor of Science </h4>
-              <h5>Aug 2021 - July 2025</h5>
-              <p><em>CGPA: 8.20</em></p>
-              <ul>
-                <li>Specialization: Artificial Intelligence and Robotics</li>
-                <!--<li><a href ="https://shass.mit.edu/news/news-2021-burchard-scholars-announced-2021" target="_blank">2021 Burchards Scholar</a></li>
-                <li>Featured in an <a href ="https://news.mit.edu/2022/ibuki-iwasaki-design-cognitive-science-0120" target="_blank">MIT News article</a></li>
-              </ul>-->
-                <p>Coursework included: Data Structures, Operating Systems, Database Systems, Design and Analysis of
-                  Algorithms</p>
+          <li class="entry">
+            <div class="entry-meta">
+              <span class="entry-date">2024</span>
             </div>
-            <h3 class="resume-title">Skills</h3>
-            <div class="resume-item pb-0">
-              <div class="skills">
-                <div class="skill-line">
-                  <h4>Languages</h4>
-                  <p>Python, C++, Java, JavaScript, SQL, Bash</p>
-                </div>
-                <br>
-                <div class="skill-line">
-                  <h4>AI / ML</h4>
-                  <p>PyTorch, TensorFlow, Hugging Face, LangChain, LlamaIndex, RAG, LoRA / PEFT, FAISS, OpenCV</p>
-                </div>
-                <br>
-                <div class="skill-line">
-                  <h4>MLOps &amp; Cloud</h4>
-                  <p>MLflow, Weights &amp; Biases, Docker, AWS SageMaker, GCP Vertex AI, FastAPI, Git</p>
-                </div>
-              </div>
+            <div class="entry-body">
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <p class="entry-org">Amazon Web Services</p>
+              <p class="entry-desc">
+                Formal grounding in cloud architecture, managed services, and the operational discipline required to
+                run production systems at scale.
+              </p>
             </div>
+          </li>
 
-
-          </div>
-          <div class="col-lg-6">
-            <!---- <h3 class="resume-title">Recent Work Experience</h3>-->
-            <div class="work-list">
-              <div class="resume-item">
-                <h4>Selected Engineering Work</h4>
-                <ul>
-                  <li>Conversational Travel Assistant (Applied NLP):
-                    <p>• Built a natural-language booking agent on Google Dialogflow with custom intent and entity
-                      models, delivered through the Telegram API for real-time conversation.</p>
-                    <p>• Designed a structured MySQL backend with PHP service endpoints; closed the loop on an
-                      end-to-end booking flow with no human intervention required.</p>
-                    <p>• Stack: Dialogflow, JavaScript, PHP, MySQL, Telegram Bot API</p>
-                  </li>
-                  <li>Full-Stack Marketplace Platform (MERN):
-                    <p>• Engineered a production-grade virtual showroom with dynamic inventory, authenticated sessions,
-                      and a lightweight recommendation layer on the MERN stack.</p>
-                    <p>• Designed RESTful services with Express.js, a React.js frontend with disciplined state
-                      management, and MongoDB for flexible schema evolution.</p>
-                    <p>• Stack: React.js, Node.js, Express.js, MongoDB, Bootstrap</p>
-                  </li>
-                  <li>Autonomous Remote Vehicle (Embodied AI):
-                    <p>• Designed an ML-assisted ROV with real-time sensor fusion, wireless telemetry, and computer
-                      vision–based obstacle awareness.</p>
-                    <p>• Stack: Arduino, Raspberry Pi, Python, OpenCV, RF communication</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Certifications</h4>
-                <ul>
-                  <li>AWS Certified Cloud Practitioner</li>
-                  <li>MERN Full Stack Internship -Ethnus</li>
-                  <li>Database Management Essentials - Coursera, University of Colorado System</li>
-                  <li>Advanced Software Engineering Virtual Experience - Forage, Walmart Global Tech</li>
-                  <li>Java Programming: Solving Problems with Software - Coursera, Duke University</li>
-                  <li>Introduction to Python - Coding Ninjas</li>
-                </ul>
-              </div>
-              <div class="resume-item">
-                <h4>Extracurricular Activities</h4>
-                <p><em>VIT, BTech</em></p>
-                <ul>
-                  <li>Organized and managed cultural and sports events as a part of the Club's activities,
-                    Coordinated with a team of volunteers to ensure successful planning and execution of the events</li>
-                </ul>
-              </div>
+          <li class="entry">
+            <div class="entry-meta">
+              <span class="entry-date">Ongoing</span>
             </div>
-          </div>
-        </div>
+            <div class="entry-body">
+              <h3>Independent Research &amp; Applied AI</h3>
+              <p class="entry-org">Self-directed</p>
+              <p class="entry-desc">
+                Ongoing work on retrieval architectures, evaluation harnesses for LLM systems, and small agentic
+                pipelines. Interested in the engineering disciplines that separate dependable AI from demos.
+              </p>
+            </div>
+          </li>
 
-      </div>
-    </section><!-- End Resume Section -->
+        </ol>
+      </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- Contact -->
+      <section id="contact" class="section section-contact" data-section="contact">
+        <header class="chapter">
+          <span class="chapter-num">V</span>
+          <span class="chapter-label">Contact</span>
+        </header>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Open to collaboration on applied AI, ML infrastructure, and research-driven engineering.</p>
-        </div>
+        <div class="prose">
+          <p class="contact-lead">
+            Open to collaboration on applied AI, ML infrastructure, and research-driven engineering. If the problem is
+            interesting and the constraints are real, I&apos;d like to hear about it.
+          </p>
 
-        <div class="contact-links">
-          <a href="mailto:saisasir99@gmail.com" class="contact-card">
-            <i class="bx bx-envelope"></i>
-            <span>saisasir99@gmail.com</span>
-          </a>
-          <a href="https://github.com/saisasir" class="contact-card" target="_blank" rel="noopener noreferrer">
-            <i class="bx bxl-github"></i>
-            <span>github.com/saisasir</span>
-          </a>
-          <a href="https://www.linkedin.com/in/saisasirkosuri/" class="contact-card" target="_blank"
-            rel="noopener noreferrer">
-            <i class="bx bxl-linkedin"></i>
-            <span>linkedin.com/in/saisasirkosuri</span>
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:saisasir99@gmail.com">saisasir99@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <dd><a href="https://www.linkedin.com/in/saisasirkosuri/" target="_blank" rel="noopener">linkedin.com/in/saisasirkosuri</a></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/SaiSasir786" target="_blank" rel="noopener">github.com/SaiSasir786</a></dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>India — available worldwide, remote-first</dd>
+            </div>
+          </dl>
+
+          <a href="mailto:saisasir99@gmail.com" class="contact-cta">
+            Start a conversation <span aria-hidden="true">→</span>
           </a>
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Contact Section -->
+      <footer class="site-foot">
+        <p>&copy; <span id="year"></span> Sai Sasir Kosuri. Designed and engineered with care.</p>
+      </footer>
 
-  </main><!-- End #main -->
+    </main>
+  </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>SAI SASIR K</h3>
-      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
-      <div class="social-links">
-        <a href="https://github.com/saisasir" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/saisasirkosuri/
-        " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="mailto:saisasir99@gmail.com"><i class="bx bx-envelope"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>SAI SASIR K</span></strong>. Last updated April 2026.
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Made using <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>, animations from <a
-          href="https://github.com/michalsnik/aos" target="_blank">AOS</a>, <a
-          href="https://github.com/mattboldt/typed.js" target="_blank">Typed.js</a>, and <a href="https://swiperjs.com/"
-          target="_blank">Swiper</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  <script>
+    // Active nav highlighting via IntersectionObserver
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+      var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-section]'));
+      if (!('IntersectionObserver' in window) || !sections.length) return;
 
-  <!-- Vendor JS Files -->
-  <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script defer src="assets/vendor/aos/aos.js"></script>
-  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script defer src="assets/vendor/typed.js/typed.min.js"></script>
-  <script defer src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+      var activate = function (id) {
+        links.forEach(function (l) {
+          if (l.getAttribute('data-target') === id) l.classList.add('is-active');
+          else l.classList.remove('is-active');
+        });
+      };
 
-  <!-- Template Main JS File -->
-  <script defer src="assets/vendor/jquery/jquery-3.6.4.min.js"></script>
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/enhancements.js"></script>
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) activate(e.target.getAttribute('data-section'));
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 
+      sections.forEach(function (s) { io.observe(s); });
+
+      // Smooth scroll already handled by CSS scroll-behavior.
+    })();
+  </script>
 </body>
 
 </html>
