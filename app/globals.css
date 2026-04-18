@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Palette — 4 color families */
+  --color-background: #060814;
+  --color-foreground: #e9ecf2;
+
+  --color-surface: #0b0f1d;
+  --color-surface-2: #111631;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.16);
+
+  --color-muted: #9ba6b8;
+  --color-muted-foreground: #5a6478;
+
+  --color-accent: #e8a35a;
+  --color-accent-strong: #f2b770;
+  --color-accent-dark: #a8681e;
+  --color-accent-foreground: #060814;
+
+  /* Rule dividers */
+  --color-rule: rgba(232, 163, 90, 0.22);
+  --color-rule-faint: rgba(255, 255, 255, 0.06);
+
+  --radius: 2px;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-accent-foreground);
+  }
+
+  /* Thin, restrained scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(232, 163, 90, 0.28);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+
+  /* Editorial typography defaults */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  /* Mono-feel labels (using Inter uppercase to stay in 2 font families) */
+  .label-mono {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* Thin editorial rule */
+  .rule {
+    border: 0;
+    border-top: 1px solid var(--color-rule-faint);
+  }
+  .rule-accent {
+    border: 0;
+    border-top: 1px solid var(--color-rule);
+  }
+}
+
+@layer components {
+  /* Amber pill marker used in section headings */
+  .section-marker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  .section-marker::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--color-accent);
+    display: inline-block;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
