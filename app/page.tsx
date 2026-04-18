@@ -1,27 +1,27 @@
-import { Starfield } from "@/components/starfield"
-import { SiteHeader } from "@/components/site-header"
+import { About } from "@/components/sections/about"
+import { Contact } from "@/components/sections/contact"
+import { Experience } from "@/components/sections/experience"
+import { Expertise } from "@/components/sections/expertise"
+import { Hero } from "@/components/sections/hero"
+import { Work } from "@/components/sections/work"
 import { SiteFooter } from "@/components/site-footer"
-import { Hero } from "@/components/landing/hero"
-import { Approach } from "@/components/landing/approach"
-import { DisciplinesGrid } from "@/components/landing/disciplines-grid"
-import { FeaturedTalent } from "@/components/landing/featured-talent"
-import { SearchPreview } from "@/components/landing/search-preview"
-import { CtaBand } from "@/components/landing/cta-band"
+import { SiteHeader } from "@/components/site-header"
+import { Starfield } from "@/components/starfield"
 
-export default function HomePage() {
+export default function Page() {
   return (
-    <>
+    <div className="relative min-h-screen overflow-hidden bg-background">
       <Starfield variant="hero" />
       <SiteHeader />
-      <main>
+      <main className="relative z-10">
         <Hero />
-        <Approach />
-        <DisciplinesGrid />
-        <FeaturedTalent />
-        <SearchPreview />
-        <CtaBand />
+        <About />
+        <Expertise />
+        <Work />
+        <Experience />
+        <Contact />
       </main>
       <SiteFooter />
-    </>
+    </div>
   )
 }

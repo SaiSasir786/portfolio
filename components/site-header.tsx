@@ -1,96 +1,66 @@
+"use client"
+
 import Link from "next/link"
-import { cn } from "@/lib/utils"
+import { useEffect, useState } from "react"
 
-interface SiteHeaderProps {
-  className?: string
-}
+const nav = [
+  { id: "about", label: "About" },
+  { id: "expertise", label: "Expertise" },
+  { id: "work", label: "Work" },
+  { id: "experience", label: "Experience" },
+  { id: "contact", label: "Contact" },
+]
 
-export function SiteHeader({ className }: SiteHeaderProps) {
+export function SiteHeader() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12)
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
   return (
     <header
-      className={cn(
-        "sticky top-0 z-40 border-b border-[color:var(--color-border)] bg-[color:var(--color-background)]/75 backdrop-blur-md",
-        className,
-      )}
+      className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
+        scrolled
+          ? "border-b border-border bg-background/80 backdrop-blur-md"
+          : "border-b border-transparent"
+      }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-6 md:px-10">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
         <Link
           href="/"
-          className="flex items-center gap-3 text-foreground transition-opacity hover:opacity-80"
-          aria-label="Helios home"
+          className="flex items-baseline gap-3 text-foreground"
+          aria-label="Sai Sasir K — home"
         >
-          <HeliosMark />
-          <span className="font-display text-xl leading-none tracking-tight">
-            Helios
-          </span>
-          <span className="label-mono hidden text-[color:var(--color-muted-foreground)] md:inline-block">
-            Talent
-          </span>
+          <span className="font-display text-xl leading-none">Sai Sasir</span>
+          <span className="label-mono text-muted">SSK</span>
         </Link>
 
-        <nav
-          className="hidden items-center gap-8 md:flex"
-          aria-label="Primary"
-        >
-          <NavLink href="/talent">Browse talent</NavLink>
-          <NavLink href="/#disciplines">Disciplines</NavLink>
-          <NavLink href="/#approach">Approach</NavLink>
+        <nav aria-label="Primary" className="hidden md:block">
+          <ul className="flex items-center gap-8">
+            {nav.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="label-mono text-muted transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Link
-            href="/talent"
-            className="group relative inline-flex items-center gap-2 rounded-none border border-[color:var(--color-accent)]/30 bg-transparent px-4 py-2 text-sm text-[color:var(--color-accent)] transition-colors hover:border-[color:var(--color-accent)] hover:bg-[color:var(--color-accent)]/10"
-          >
-            <span>Open roster</span>
-            <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
-              →
-            </span>
-          </Link>
-        </div>
+        <a
+          href="#contact"
+          className="label-mono hidden rounded-full border border-accent px-4 py-2 text-accent transition-colors hover:bg-accent hover:text-accent-foreground md:inline-block"
+        >
+          Get in touch
+        </a>
       </div>
     </header>
-  )
-}
-
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="label-mono text-[color:var(--color-muted)] transition-colors hover:text-foreground"
-    >
-      {children}
-    </Link>
-  )
-}
-
-function HeliosMark() {
-  return (
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 22 22"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <circle cx="11" cy="11" r="3.5" fill="var(--color-accent)" />
-      <circle
-        cx="11"
-        cy="11"
-        r="9.5"
-        stroke="var(--color-accent)"
-        strokeOpacity="0.35"
-        strokeWidth="1"
-      />
-      <circle
-        cx="11"
-        cy="11"
-        r="6.5"
-        stroke="var(--color-accent)"
-        strokeOpacity="0.55"
-        strokeWidth="1"
-      />
-    </svg>
   )
 }

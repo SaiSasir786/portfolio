@@ -18,23 +18,28 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Helios — Precision talent discovery for modern teams",
+  title: "Sai Sasir K — Gen-AI & ML Engineer",
   description:
-    "A quiet, editorial platform for recruiters to discover exceptional engineers, designers, and operators across disciplines and levels.",
-  applicationName: "Helios",
-  authors: [{ name: "Helios Talent" }],
+    "Applied AI engineer designing large language model systems, retrieval pipelines, and autonomous agents with production reliability in mind.",
+  applicationName: "Sai Sasir K",
+  authors: [{ name: "Sai Sasir K" }],
   keywords: [
-    "talent discovery",
-    "recruitment platform",
-    "engineering hiring",
-    "design hiring",
-    "candidate profiles",
-    "executive search",
+    "Sai Sasir",
+    "Gen-AI engineer",
+    "ML engineer",
+    "machine learning",
+    "LLM",
+    "generative AI",
+    "RAG",
+    "LangChain",
+    "PyTorch",
+    "AI systems",
+    "robotics",
   ],
   openGraph: {
-    title: "Helios — Precision talent discovery",
+    title: "Sai Sasir K — Gen-AI & ML Engineer",
     description:
-      "Discover exceptional engineers, designers, and operators across disciplines and levels.",
+      "Applied AI engineer designing LLM systems, retrieval pipelines, and autonomous agents.",
     type: "website",
   },
 }
