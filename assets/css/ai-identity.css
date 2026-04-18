@@ -1,0 +1,339 @@
+/* ================================================================
+   AI EXPERT VISUAL IDENTITY — Professional Design System
+   Space Grotesk · Inter · JetBrains Mono
+   Only fires on body.dark-mode (default via JS)
+   ================================================================ */
+
+/* ── 0. Design tokens ──────────────────────────────────────────────── */
+:root {
+  --ai-font-display: 'Space Grotesk', sans-serif;
+  --ai-font-body: 'Inter', 'Open Sans', sans-serif;
+  --ai-font-mono: 'JetBrains Mono', monospace;
+
+  --ai-bg: #07071a;
+  --ai-cyan:    var(--main-color);
+  --ai-violet: #7c3aed;
+  --ai-text: #f0f4ff;
+  --ai-muted: #475569;
+  --ai-surface: rgba(255, 255, 255, 0.04);
+  --ai-border: rgba(0, 212, 255, 0.14);
+}
+
+/* ── 1. Global font stack ──────────────────────────────────────────── */
+body.dark-mode {
+  font-family: var(--ai-font-body) !important;
+  background-color: var(--ai-bg);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5 {
+  font-family: var(--ai-font-display) !important;
+}
+
+/* ── 2. Hero: massive type, cinematic scale ────────────────────────── */
+body.dark-mode #hero h1 {
+  font-size: clamp(52px, 8vw, 96px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -3px !important;
+  line-height: 0.95 !important;
+  margin-bottom: 0 !important;
+}
+
+body.dark-mode #hero .hero-subtitle {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(0, 212, 255, 0.45) !important;
+  margin: 28px 0 6px !important;
+  display: block !important;
+}
+
+body.dark-mode #hero .typed,
+body.dark-mode #hero .typed-cursor {
+  font-family: var(--ai-font-body) !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  color: #475569 !important;
+  letter-spacing: 0 !important;
+  margin: 0 !important;
+}
+
+/* Color picker — ultra-minimal ghost dots */
+body.dark-mode #hero .color-picker {
+  margin-top: 52px !important;
+}
+
+body.dark-mode #hero .color-picker button {
+  width: 8px !important;
+  height: 8px !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  opacity: 0.25 !important;
+  margin-right: 14px !important;
+  transition: opacity 0.25s, transform 0.25s !important;
+}
+
+body.dark-mode #hero .color-picker button:hover,
+body.dark-mode #hero .color-picker button:focus {
+  opacity: 0.75 !important;
+  transform: scale(1.6) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ── 3. Sidebar navigation ─────────────────────────────────────────── */
+body.dark-mode .nav-menu a,
+body.dark-mode .nav-menu a:focus {
+  border-radius: 10px !important;
+  height: 46px !important;
+  margin-bottom: 4px !important;
+}
+
+/* ── 4. Sections: breathing room ──────────────────────────────────── */
+body.dark-mode #expertise,
+body.dark-mode #portfolio,
+body.dark-mode #skills,
+body.dark-mode #about,
+body.dark-mode #resume,
+body.dark-mode #contact {
+  padding: 100px 0 !important;
+}
+
+/* ── 5. Section titles: editorial scale + left-accent line ────────── */
+body.dark-mode .section-title {
+  text-align: left !important;
+  margin-bottom: 56px !important;
+  padding-left: 0 !important;
+}
+
+body.dark-mode .section-title::before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ai-cyan), var(--ai-violet));
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+
+body.dark-mode .section-title h2 {
+  font-size: clamp(30px, 4vw, 54px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -2px !important;
+  line-height: 1.05 !important;
+  color: var(--ai-text) !important;
+  text-shadow: none !important;
+}
+
+body.dark-mode .section-title p {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  color: var(--ai-muted) !important;
+  margin-top: 10px !important;
+}
+
+/* ── 6. Expertise cards ────────────────────────────────────────────── */
+body.dark-mode .expertise-grid {
+  gap: 20px !important;
+}
+
+body.dark-mode .expertise-card {
+  border-radius: 14px !important;
+  padding: 32px 28px !important;
+}
+
+body.dark-mode .expertise-card h4 {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.4px !important;
+  margin-bottom: 10px !important;
+  color: var(--ai-text) !important;
+}
+
+body.dark-mode .expertise-card p {
+  font-size: 13.5px !important;
+  line-height: 1.8 !important;
+  color: #4a5568 !important;
+  margin-bottom: 20px !important;
+}
+
+body.dark-mode .expertise-tags span {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 4px !important;
+  padding: 3px 8px !important;
+}
+
+/* ── 7. Skill section ──────────────────────────────────────────────── */
+body.dark-mode .skills .skills-grid {
+  gap: 16px !important;
+}
+
+body.dark-mode .skills .skill-category {
+  border-radius: 12px !important;
+  padding: 22px 18px !important;
+}
+
+body.dark-mode .skills .skill-category h4 {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 9px !important;
+  letter-spacing: 2.5px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 14px !important;
+}
+
+body.dark-mode .skill-tag {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.2px !important;
+  border-radius: 4px !important;
+  padding: 4px 10px !important;
+}
+
+/* ── 8. Portfolio ──────────────────────────────────────────────────── */
+body.dark-mode #portfolio-flters li {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  border-radius: 6px !important;
+  padding: 9px 18px !important;
+}
+
+body.dark-mode .portfolio-info h4 {
+  font-family: var(--ai-font-display) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.3px !important;
+}
+
+body.dark-mode .portfolio-info p {
+  font-family: var(--ai-font-body) !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+}
+
+/* ── 9. Resume ─────────────────────────────────────────────────────── */
+body.dark-mode .resume .resume-title {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 2.5px !important;
+  text-transform: uppercase !important;
+  color: rgba(0, 212, 255, 0.55) !important;
+  margin-bottom: 20px !important;
+}
+
+body.dark-mode .resume .resume-item {
+  border-radius: 10px !important;
+  padding: 24px !important;
+  background: var(--ai-surface) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+body.dark-mode .resume .resume-item h4 {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.3px !important;
+}
+
+body.dark-mode .resume .resume-item h5 {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 4px !important;
+  padding: 3px 8px !important;
+  display: inline-block !important;
+}
+
+body.dark-mode .resume .resume-item p,
+body.dark-mode .resume .resume-item li {
+  font-size: 13.5px !important;
+  line-height: 1.75 !important;
+}
+
+/* ── 10. Contact ───────────────────────────────────────────────────── */
+body.dark-mode .contact .contact-card {
+  border-radius: 12px !important;
+  padding: 20px 28px !important;
+}
+
+body.dark-mode .contact .contact-card span {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 12.5px !important;
+  letter-spacing: 0.2px !important;
+}
+
+body.dark-mode .contact .contact-card i {
+  font-size: 22px !important;
+}
+
+/* ── 11. About section ─────────────────────────────────────────────── */
+body.dark-mode .about .section-title p,
+body.dark-mode .about .section-title>p {
+  font-family: var(--ai-font-body) !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  color: #64748b !important;
+  line-height: 1.85 !important;
+}
+
+/* ── 12. Footer ────────────────────────────────────────────────────── */
+body.dark-mode footer#footer {
+  padding: 50px 0 30px !important;
+}
+
+body.dark-mode footer#footer h3 {
+  font-family: var(--ai-font-display) !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  margin-bottom: 16px !important;
+}
+
+body.dark-mode footer#footer .copyright,
+body.dark-mode footer#footer .credits {
+  font-family: var(--ai-font-mono) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* ── 13. Preloader — match dark bg ─────────────────────────────────── */
+body.dark-mode #preloader {
+  background: var(--ai-bg) !important;
+}
+
+/* ── 14. Responsive ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  body.dark-mode #hero h1 {
+    letter-spacing: -1.5px !important;
+  }
+
+  body.dark-mode .section-title h2 {
+    letter-spacing: -1px !important;
+  }
+
+  body.dark-mode #expertise,
+  body.dark-mode #portfolio,
+  body.dark-mode #skills,
+  body.dark-mode #about,
+  body.dark-mode #resume,
+  body.dark-mode #contact {
+    padding: 70px 0 !important;
+  }
+}

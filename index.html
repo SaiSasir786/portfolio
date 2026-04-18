@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8F82144ZYM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8F82144ZYM');
+  </script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Performance: preload critical CSS -->
+  <link rel="preload" href="assets/css/pro-design.css" as="style">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <title>Sai Sasir K | Gen-AI &amp; ML Engineer</title>
+  <meta
+    content="Sai Sasir K — Gen-AI &amp; ML Engineer specializing in large language models, generative AI systems, intelligent automation, and production ML pipelines."
+    name="description">
+  <meta
+    content="Sai Sasir, Gen-AI engineer, ML engineer, machine learning, LLM, generative AI, deep learning, RAG, fine-tuning, LangChain, PyTorch, TensorFlow, Hugging Face, AI systems, robotics"
+    name="keywords">
+  <meta name="author" content="Sai Sasir K">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sai Sasir K | Gen-AI & ML Engineer">
+  <meta property="og:description" content="Gen-AI & ML Engineer specializing in LLMs, RAG pipelines, autonomous agents, and production ML systems.">
+  <meta property="og:image" content="assets/img/misc/ic.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sai Sasir K | Gen-AI & ML Engineer">
+  <meta name="twitter:description" content="Gen-AI & ML Engineer specializing in LLMs, RAG pipelines, autonomous agents, and production ML systems.">
+
+  <!-- Favicons -->
+  <link href="assets/img/misc/ic.png" rel="icon">
+  <link href="assets/img/misc/ic.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts — critical (dark mode: Space Grotesk + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- Legacy fonts — loaded async (light mode fallback only) -->
+  <link
+    rel="stylesheet" media="print" onload="this.media='all'"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&display=swap">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@300;400;500;600;700&display=swap"></noscript>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+
+  <link href="assets/css/interaction.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/enhancements.css" rel="stylesheet">
+  <link href="assets/css/ai-identity.css" rel="stylesheet">
+  <link href="assets/css/pro-design.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.8.1
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="dark-mode" ontouchstart="">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#expertise" class="nav-link scrollto"><i class="bx bx-brain"></i> <span>Expertise</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-library"></i> <span>Projects</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Stack</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Resume</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="overlay"></div>
+    <div class="container" data-aos="zoom-in-right" data-aos-delay="350">
+      <h1>SAI SASIR K</h1>
+      <p class="hero-subtitle">Gen-AI &amp; ML Engineer &nbsp;&bull;&nbsp; AI Systems Architect &nbsp;&bull;&nbsp; Deep
+        Learning Practitioner</p>
+      <span class="typed"
+        data-typed-items="Building intelligent systems that think.,Fine-tuning LLMs for production.,RAG pipelines &amp; autonomous agents.,Bridging research and real-world AI."></span>
+
+      <div class="hero-available-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn-hero-primary scrollto">View My Work</a>
+        <a href="#contact" class="btn-hero-secondary scrollto">Get in Touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">AI Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">AWS</span>
+          <span class="stat-label">Certified</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">8.2</span>
+          <span class="stat-label">CGPA / 10</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">VIT</span>
+          <span class="stat-label">'25 Graduate</span>
+        </div>
+      </div>
+
+      <div class="color-picker">
+        <button class='color-change' id="color-1" autofocus></a>
+          <button class='color-change' id="color-2"></a>
+            <button class='color-change' id="color-3"></a>
+              <button class='color-change' id="color-4"></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Expertise Section ======= -->
+    <section id="expertise" class="expertise section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>Expertise</h2>
+          <p>Core domains where I architect, build, and deploy intelligent systems.</p>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="expertise-icon"><i class="bx bx-brain"></i></div>
+            <h4>Generative AI &amp; LLMs</h4>
+            <p>Fine-tuning foundation models, building RAG pipelines, prompt engineering, and deploying multi-modal AI
+              systems at scale.</p>
+            <div class="expertise-tags">
+              <span>LLaMA</span><span>GPT-4</span><span>Claude API</span><span>RAG</span><span>LoRA / PEFT</span>
+            </div>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="expertise-icon"><i class="bx bx-chip"></i></div>
+            <h4>ML Engineering</h4>
+            <p>End-to-end ML pipelines — from data ingestion and model training to production serving, monitoring, and
+              continuous retraining.</p>
+            <div class="expertise-tags">
+              <span>PyTorch</span><span>TensorFlow</span><span>MLflow</span><span>W&amp;B</span><span>CUDA</span>
+            </div>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="expertise-icon"><i class="bx bx-bot"></i></div>
+            <h4>AI Agents &amp; Systems</h4>
+            <p>Designing autonomous agent architectures, multi-agent workflows, tool-integrated pipelines, and agentic
+              reasoning systems.</p>
+            <div class="expertise-tags">
+              <span>LangChain</span><span>LlamaIndex</span><span>AutoGen</span><span>CrewAI</span><span>Tool Use</span>
+            </div>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="expertise-icon"><i class="bx bx-cog"></i></div>
+            <h4>Robotics &amp; Embodied AI</h4>
+            <p>Intelligent robotic systems that perceive, reason, and act — bridging physical and digital intelligence
+              through sensor fusion and CV.</p>
+            <div class="expertise-tags">
+              <span>ROS</span><span>OpenCV</span><span>SLAM</span><span>Computer Vision</span><span>Sensor Fusion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Expertise Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <ul id="portfolio-flters">
+                <li data-filter=".filter-genai" class="filter-active">gen-ai</li>
+                <li data-filter=".filter-webdev">web dev</li>
+                <li data-filter=".filter-roboex">robotics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- ======= AI TRAVEL CHATBOT ======= -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-genai filter-webdev">
+            <ul id="portfolio-tags">
+              <li>gen-ai</li>
+              <li>web dev</li>
+            </ul>
+            <a href="projects/maru.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+              title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/brainstorm_chatbot/robot_generation.gif" class="img-fluid" loading="lazy" alt=""
+                  style="width: 400px; height: 250px; object-fit: cover;">
+                <div class="portfolio-info">
+                  <h4>AI Travel Booking Assistant</h4>
+                  <p>NLP-powered conversational agent with Dialogflow + Telegram API integration and live MySQL backend.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- ======= MARU — MERN Platform ======= -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webdev">
+            <ul id="portfolio-tags">
+              <li>web dev</li>
+            </ul>
+            <a href="projects/maru.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+              title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/maru/avgif.gif" class="img-fluid" loading="lazy" alt=""
+                  style="width: 400px; height: 250px;">
+                <div class="portfolio-info">
+                  <h4>Full-Stack MERN Platform</h4>
+                  <p>Production-grade virtual car showroom — buy, sell, browse — built end-to-end with MERN stack.</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <! --=======GLOW=======-->
+            <!--<div class="col-lg-4 col-md-6 portfolio-item filter-uxui filter-research">
+            <ul id="portfolio-tags">
+              <li>ux/ui design</li>
+              <li>research</li>
+            </ul>
+            <a href="projects/glow.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/glow/glow screen gif.gif" class="img-fluid" loading="lazy" alt="">
+                <div class="portfolio-info">
+                  <h4>glow</h4>
+                  <p>A virtual environment for performances during the age of COVID-19.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <! -- ======= MITBOOK ======= -->
+            <!--<div class="col-lg-4 col-md-6 portfolio-item filter-uxui filter-research">
+            <ul id="portfolio-tags">
+              <li>ux/ui design</li>
+              <li>research</li>
+            </ul>
+            <! -- <a href="projects/book.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"> -->
+            <!--<div class="portfolio-wrap">
+                <img src="assets/img/design_projects/mitbook/logoanimation.gif" class="img-fluid" loading="lazy" alt="">
+                <div class="static-img">
+                  <img src="assets/img/design_projects/mitbook/sunraymockup.png" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="portfolio-info">
+                  <h4>book</h4>
+                  <p>A workspace booking system for the MIT Libraries. <br> (6/18/23: page currently under construction)</p>
+                </div>
+              </div>
+             -- </a> -->
+            <!--</div> -- >
+
+          <! -- ======= CRITTER ======= -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-roboex">
+              <ul id="portfolio-tags">
+                <li>RoboEx</li>
+              </ul>
+              <a href="projects/critter.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                title="Portfolio Details">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/design_projects/critter/remotecrl.jpg" class="img-fluid" loading="lazy" alt=""
+                    style="width: 400px; height: 250px;">
+                  <div class="static-img">
+                    <img src="assets/img/design_projects/critter/remotecrl.jpg" class="img-fluid" loading="lazy" alt=""
+                      style="width: 400px; height: 250px;">
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Autonomous ROV</h4>
+                    <p>ML-assisted remote operated vehicle with real-time sensor feedback and control systems.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+
+            <!-- ======= ENERGY VISUAL ======= -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-experiment filter-webdev">
+              <ul id="portfolio-tags">
+                <li>experiment</li>
+                <li>web dev</li>
+              </ul>
+              <a href="projects/energy.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+                <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/energy/glowing.gif" class="img-fluid" loading="lazy" alt="">
+                <div class="static-img">
+                  <img src="assets/img/design_projects/energy/student.png" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="portfolio-info">
+                  <h4>exploratory energy</h4>
+                  <p>An educational web interactive about energy.</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 
+              <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
+            <ul id="portfolio-tags">
+              <li>misc</li>
+            </ul>
+            <a href="projects/grid-stool.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/infinite grid stool/cover_fitted_rendering.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="static-img">
+                  <img src="assets/img/design_projects/infinite grid stool/slides_cover.jpg" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="portfolio-info">
+                  <h4>infinite grid</h4>
+                  <p>Furniture that connects.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+           <! -- ======= WEB ======= -->
+              <div class="col-lg-4 col-md-6 portfolio-item filter-physical filter-roboex">
+                <ul id="portfolio-tags">
+                  <li>RoboEx</li>
+                </ul>
+                <a href="projects/web.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                  title="Portfolio Details">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/design_projects/web (line followers)/fire3.gif" class="img-fluid" loading="lazy" alt=""
+                      style="width: 400px; height: 250px;">
+                    <div class="static-img">
+                      <img src="assets/img/design_projects/web (line followers)/fire2.jpg" class="img-fluid" loading="lazy" alt=""
+                        style="width: 400px; height: 250px;">
+                    </div>
+                    <div class="portfolio-info">
+                      <h4>fire</h4>
+                      <p>An enclosure built by a joint effort between humans and robots.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+              <!-- ======= OSSIUM ======= -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-misc">
+            <ul id="portfolio-tags">
+              <li>misc</li>
+            </ul>
+            <a href="projects/ossium.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/ossium/skeleton skelechair outline.png" class="img-fluid" loading="lazy" alt="">
+                <div class="static-img">
+                  <img src="assets/img/design_projects/ossium/studio.jpeg" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="portfolio-info">
+                  <h4>ossium</h4>
+                  <p>A bio-inspired chair.</p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+              <!-- ======= IDEO ======= -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-research filter-uxui">
+            <ul id="portfolio-tags">
+              <li>research</li>
+              <li>ux/ui design</li>
+            </ul>
+            <a href="projects/ideo.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/misc/ideo_cutout.png" class="img-fluid" loading="lazy" alt="">
+                <div class="static-img">
+                  <img src="assets/img/misc/ideo overlay opaque.png" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="portfolio-info">
+                  <h4>IDEO</h4>
+                  <p>16-week interaction design internship.</p>
+                </div>
+              </div>
+            </a>
+          </div>  -->
+
+              <!-- ======= FOODSION ======= -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-digital">
+            <a href="projects/project-template.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/brainstorm_chatbot/robot_generation.gif" class="img-fluid" loading="lazy" alt="">
+                <div class="portfolio-info">
+                  <h4>Project</h4>
+                  <p>App</p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+              <!-- ======= MARBLE ======= -->
+              <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-digital">
+            <a href="projects/marble.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
+              <div class="portfolio-wrap">
+                <img src="assets/img/design_projects/mARble/clean.PNG" class="img-fluid" loading="lazy" alt="">
+                <div class="portfolio-info">
+                  <h4>mARble</h4>
+                  <p>An augmented physics lesson.</p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>The AI/ML ecosystem I build with — from research to production.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Gen-AI &amp; LLMs</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Hugging Face</span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">LlamaIndex</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Claude API</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">LoRA / PEFT</span>
+              <span class="skill-tag">Fine-tuning</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>ML Frameworks</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">XGBoost</span>
+              <span class="skill-tag">FAISS</span>
+              <span class="skill-tag">ONNX</span>
+              <span class="skill-tag">CUDA</span>
+              <span class="skill-tag">TensorRT</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>MLOps &amp; Infra</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">MLflow</span>
+              <span class="skill-tag">Weights &amp; Biases</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">AWS SageMaker</span>
+              <span class="skill-tag">GCP Vertex AI</span>
+              <span class="skill-tag">FastAPI</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Bash</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Robotics &amp; Vision</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">ROS</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">SLAM</span>
+              <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">Sensor Fusion</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Web &amp; Data</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Apache Spark</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= About Section for large screens ======= -->
+    <section id="about" class="about">
+
+      <!-- ======= ABOUT container for larger screens ======= -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>About</h2>
+          <!-- <div class="social-links">
+            <a href="https://github.com/buksters" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://linkedin.com/in/ibuki-iwasaki
+            " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:ibukiwasaki@gmail.com"><i class="bx bx-envelope"></i></a>
+          </div> -->
+          <p>I'm Sai Sasir — a Gen-AI &amp; ML Engineer with deep specialization in large language models, generative AI
+            systems, and intelligent automation. I architect and deploy AI solutions that bridge the gap between
+            cutting-edge research and production reliability, with a focus on LLM fine-tuning, RAG pipelines, and
+            autonomous agent systems.</p>
+          <p style="margin-top: 12px;">My background in AI &amp; Robotics gives me a unique perspective — I think about
+            intelligence from both software and hardware angles. I'm driven by the belief that the most impactful AI
+            isn't built in isolation, but through rigorous engineering, domain collaboration, and a relentless focus on
+            real-world outcomes. When I'm not deep in model training runs, I'm exploring the intersection of embodied AI
+            and language models. Swipe through below to see some moments from my journey.</p>
+          <div class="swiper about-pictures">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="overlay">
+                  <p>
+                    A little more about me:
+                  </p>
+                </div>
+                <img src="assets/img/misc/sh1.jpg" class="img-fluid" loading="lazy" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/misc/zoo1.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="overlay">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/misc/del.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="overlay">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/misc/mli.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="overlay">
+                </div>
+              </div>
+              <!---- <div class="swiper-slide">
+                <img src="assets/img/misc/pc.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="overlay">
+                  <p>
+                    except for when I lived on a ski resort in Utah for six months when classes were virtual due to the pandemic,
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/misc/japan.jpg" class="img-fluid" loading="lazy" alt="">
+                <div class="overlay">
+                </div>
+              </div>-->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= ABOUT container for smaller screens ======= -->
+      <!-- <div class="container d-lg-none" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Hello! I'm Ibuki, a Japanese-American designer-maker-researcher who uses a lot of hyphens when describing myself because I dwell in a lot of intersections. These days I enjoy exploring and experimenting in the intersection of design, technology, and behavior.</p>
+          <br>
+          <img src="assets/img/pond.JPG" class="img-fluid" loading="lazy" alt="">
+        </div>
+      </div> -->
+    </section>
+
+    <!-- End About Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Full CV available on request — reach out via <a href="mailto:saisasir99@gmail.com" style="color:var(--main-color);text-decoration:none;">email</a> or <a href="https://www.linkedin.com/in/saisasirkosuri/" target="_blank" style="color:var(--main-color);text-decoration:none;">LinkedIn</a>.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>SAI SASIR K</h4>
+              <p><em>Gen-AI &amp; ML Engineer specializing in large language models, generative AI systems, and
+                  intelligent automation. I design and deploy end-to-end AI pipelines — from data ingestion and model
+                  training to production serving and monitoring. With a strong foundation in both software engineering
+                  and robotics (AI &amp; Robotics, VIT), I build intelligent systems that are technically robust,
+                  production-ready, and grounded in real-world constraints.</em>
+              </p>
+              <div class="social-links">
+                <a href="https://github.com/saisasir" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/saisasirkosuri/
+                " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="mailto:saisasir99@gmail.com"><i class="bx bx-envelope"></i></a>
+              </div>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+              <h4>Vellore Institute of Technology <br>
+                Bachelor of Science </h4>
+              <h5>Aug 2021 - July 2025</h5>
+              <p><em>CGPA: 8.20</em></p>
+              <ul>
+                <li>Specialization: Artificial Intelligence and Robotics</li>
+                <!--<li><a href ="https://shass.mit.edu/news/news-2021-burchard-scholars-announced-2021" target="_blank">2021 Burchards Scholar</a></li>
+                <li>Featured in an <a href ="https://news.mit.edu/2022/ibuki-iwasaki-design-cognitive-science-0120" target="_blank">MIT News article</a></li>
+              </ul>-->
+                <p>Coursework included: Data Structures, Operating Systems, Database Systems, Design and Analysis of
+                  Algorithms</p>
+            </div>
+            <h3 class="resume-title">Skills</h3>
+            <div class="resume-item pb-0">
+              <div class="skills">
+                <div class="skill-line">
+                  <h4>Languages</h4>
+                  <p>Python, C++, Java, JavaScript, SQL, Bash</p>
+                </div>
+                <br>
+                <div class="skill-line">
+                  <h4>AI / ML</h4>
+                  <p>PyTorch, TensorFlow, Hugging Face, LangChain, LlamaIndex, RAG, LoRA / PEFT, FAISS, OpenCV</p>
+                </div>
+                <br>
+                <div class="skill-line">
+                  <h4>MLOps &amp; Cloud</h4>
+                  <p>MLflow, Weights &amp; Biases, Docker, AWS SageMaker, GCP Vertex AI, FastAPI, Git</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-lg-6">
+            <!---- <h3 class="resume-title">Recent Work Experience</h3>-->
+            <div class="work-list">
+              <div class="resume-item">
+                <h4>Engineering Projects</h4>
+                <ul>
+                  <li>AI Travel Booking Assistant (Conversational AI System):
+                    <p>• Engineered an NLP-powered chatbot using Google Dialogflow for intent recognition and entity
+                      extraction, deployed via Telegram API for real-time travel booking automation.</p>
+                    <p>• Designed a structured MySQL backend with PHP APIs for booking management; achieved end-to-end
+                      automated booking flow without human intervention.</p>
+                    <p>• Stack: Dialogflow, JavaScript, PHP, MySQL, Telegram Bot API</p>
+                  </li>
+                  <li>Full-Stack AI-Integrated Marketplace (MERN):
+                    <p>• Built a production-grade virtual car showroom platform with dynamic inventory, user
+                      authentication, and a recommendation layer using the MERN stack.</p>
+                    <p>• Architected RESTful APIs with Express.js, React.js frontend with state management, and MongoDB
+                      for flexible schema storage.</p>
+                    <p>• Stack: React.js, Node.js, Express.js, MongoDB, Bootstrap</p>
+                  </li>
+                  <li>Autonomous Remote Operated Vehicle (ROV):
+                    <p>• Designed and built an ML-assisted ROV with real-time sensor fusion, wireless control, and
+                      computer vision-based obstacle feedback.</p>
+                    <p>• Stack: Arduino, Raspberry Pi, Python, OpenCV, RF Communication</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Certifications</h4>
+                <ul>
+                  <li>AWS Certified Cloud Practitioner</li>
+                  <li>MERN Full Stack Internship -Ethnus</li>
+                  <li>Database Management Essentials - Coursera, University of Colorado System</li>
+                  <li>Advanced Software Engineering Virtual Experience - Forage, Walmart Global Tech</li>
+                  <li>Java Programming: Solving Problems with Software - Coursera, Duke University</li>
+                  <li>Introduction to Python - Coding Ninjas</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Extracurricular Activities</h4>
+                <p><em>VIT, BTech</em></p>
+                <ul>
+                  <li>Organized and managed cultural and sports events as a part of the Club's activities,
+                    Coordinated with a team of volunteers to ensure successful planning and execution of the events</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Building something with AI? Exploring ML infrastructure? Let's talk.</p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:saisasir99@gmail.com" class="contact-card">
+            <i class="bx bx-envelope"></i>
+            <span>saisasir99@gmail.com</span>
+          </a>
+          <a href="https://github.com/saisasir" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-github"></i>
+            <span>github.com/saisasir</span>
+          </a>
+          <a href="https://www.linkedin.com/in/saisasirkosuri/" class="contact-card" target="_blank"
+            rel="noopener noreferrer">
+            <i class="bx bxl-linkedin"></i>
+            <span>linkedin.com/in/saisasirkosuri</span>
+          </a>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>SAI SASIR K</h3>
+      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
+      <div class="social-links">
+        <a href="https://github.com/saisasir" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/saisasirkosuri/
+        " class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="mailto:saisasir99@gmail.com"><i class="bx bx-envelope"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>SAI SASIR K</span></strong>. Last updated April 2026.
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Made using <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>, animations from <a
+          href="https://github.com/michalsnik/aos" target="_blank">AOS</a>, <a
+          href="https://github.com/mattboldt/typed.js" target="_blank">Typed.js</a>, and <a href="https://swiperjs.com/"
+          target="_blank">Swiper</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="assets/vendor/typed.js/typed.min.js"></script>
+  <script defer src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script defer src="assets/vendor/jquery/jquery-3.6.4.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/enhancements.js"></script>
+
+</body>
+
+</html>
